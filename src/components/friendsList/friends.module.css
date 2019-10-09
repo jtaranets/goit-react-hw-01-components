@@ -1,0 +1,39 @@
+.list {
+  width: 30%;
+  margin: 0 auto 40px;
+  list-style: none;
+}
+
+.item {
+  box-shadow: 0px 1px 3px 0px rgba(191, 205, 222, 0.75);
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.item:last-child {
+  margin-bottom: 0;
+}
+
+.status {
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(212, 41, 41);
+}
+
+.online {
+  background-color: rgb(0, 128, 0);
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 15px;
+  margin: 10px 15px 10px 0;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 35px;
+}

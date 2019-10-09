@@ -1,0 +1,74 @@
+@import '../fonts.css';
+
+.profile {
+  width: 250px;
+  box-shadow: 0px 1px 3px 0px rgba(191, 205, 222, 0.75);
+  margin: 0 auto 30px;
+  background-color: #fff;
+}
+.description {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar {
+  margin-top: 31px;
+  border-radius: 50%;
+  margin-bottom: 32px;
+  width: 128px;
+}
+
+.name {
+  font-weight: 700;
+  color: #122236;
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.tag {
+  color: #768696;
+  font-size: 14px;
+  margin: 0 0 13px 0;
+}
+
+.location {
+  composes: tag;
+}
+
+.stats {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 75px;
+}
+
+.item {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #f3f6f9;
+  border: 1px solid #e4e9f0;
+}
+
+.label {
+  font-size: 12px;
+  color: #768696;
+  display: inline-block;
+  margin-bottom: 9px;
+}
+
+.label::first-letter {
+  text-transform: uppercase;
+}
+
+.quantity {
+  font-weight: 700;
+  font-size: 14px;
+  color: #1f3349;
+}
