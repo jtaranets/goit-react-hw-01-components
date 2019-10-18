@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import style from './stats.module.css';
+import color from '../../helpers/color';
 
-const color = () => {
-  return Math.random() * Math.floor(266);
-};
+
 const Stats = ({ title, stats = [] }) => (
   <section className={style.stats__section}>
     {title && <h2 className={style.title}>{title}</h2>}

@@ -1,39 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import * as elems from './transactionHistory-styles';
 
-const Table = styled.table`
-  margin: 0 auto;
-  width: 50%;
-`;
-
-const Heading = styled.thead`
-  background-color: #8bd3ea;
-`;
-
-const Title = styled.th`
-  color: #fff;
-  text-transform: uppercase;
-  width: calc(100% / 3);
-  padding: 10px 30px;
-`;
-
-const RowGrey = styled.tr`
-  background-color: rgb(238, 235, 235);
-`;
-
-const RowWhite = styled.tr`
-  background-color: #fff;
-`;
-
-const Data = styled.td`
-  color: #808080;
-  text-align: center;
-  padding: 10px 30px;
-  &:first-letter {
-    text-transform: uppercase;
-  }
-`;
+const { Table, Heading, Title, RowGrey, RowWhite, Data } = elems;
 
 const TransactionHistory = ({ transactions }) => (
   <Table>
